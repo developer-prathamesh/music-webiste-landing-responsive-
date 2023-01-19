@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* min-height: 100vh; */
+    font-family: 'Montserrat', sans-serif;
+    /* min-width: 1200px; */
+}
+
+nav{
+    background-color: #270082;
+    padding: 10px;  
+}
+
+.container{
+    
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav .right ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.right ul li{
+
+    
+    padding: 10px;
+    list-style-type: none;
+
+}
+
+.right ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.hero{
+    background-image: url("./images/hero_image.png");
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 40px;
+}
+
+.hero h1{
+    font-size: 72px;
+}
+.hero h3{
+    font-size: 34px;
+}
+
+.hero p{
+    line-height: 1.8;
+}
+
+.first{
+    background-color: #281154;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+
+}
+
+.first .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap :30px;
+}
+
+.first .icon{
+    margin:-4px 8px;
+}
+
+.first-img{
+    margin-top: -300px;
+    position: relative;
+    top: 400px;
+    /* z-index: 1; */
+}
+.first-img img{
+    width: 868px;
+}
+
+.second{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    /* height: 100vh; */
+    padding-top: 500px;
+    
+    
+}
+
+.second .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap :30px;
+    color: black;
+}
+
+.info{
+    background-image: url("./images/video.png");
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap :30px;
+    margin-top: 40px;
+}
+.info .container p{
+    line-height: 1.6
+}
+
+.gift{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.gift .container{
+
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    gap: 80px;
+
+}
+
+.gift .right{
+/* align-self: flex-start; */
+    text-align: left;
+    display: flex;
+    flex-direction: column ;
+    line-height: 1.8;
+    gap: 30px;
+}
+
+.line{
+    border: 1px solid black;
+}
+
+.fbtn{
+    transition: all 0.2s ease-in-out !important;
+}
+
+.fbtn:hover{
+    background-color: #DC0000 !important;
+    color: white !important;
+}
+
+.btn{
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.btn:hover{
+    background-color: #37008E;
+    color: white;
+}
+
+.gift .btn{
+    align-self: flex-start;
+    
+}
+
+@media all and (max-width:868px){
+    
+    nav{
+        padding: 20px;
+      
+    }
+
+    nav .container{
+        width: 100%;
+        margin: 0;
+    }
+    nav .right{
+        /* display: none; */
+        font-size: 13px;
+        
+    }
+    nav .last{
+        display: none;
+    }
+
+    .hero h1{
+        font-size: 42px;
+    }
+    .hero h3{
+        font-size: 30px;
+    }
+
+    .first p{
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    .info .container{
+        padding-top: 0;
+    }
+
+    .info h1{
+        font-size: 28px;
+        line-height: 1.5;
+    }
+
+    .image{
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
+    }
+
+    .second {
+        padding-top: 330px;
+    }
+    .gift{
+        margin-top: 50px;
+    }
+    .gift .container{
+        flex-direction: column;
+    }
+    .gift .left{
+        width: 100%;
+    }
+    .gift .left img{
+        width: 100%;
+    }
+}
+
